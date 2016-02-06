@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="tests.acceptanceTestCases.TestHomePage">
+        <methods>
+          <include name="testLionFromNY"/>
+          <include name="testAllBooksWithMaximumAvailableBooksFromWY"/>
+          <include name="setUp"/>
+          <include name="testElephantFromMN"/>
+          <include name="testZebraFromCA"/>
+          <include name="testAllBooksWithDefaultTax"/>
+          <include name="beforeClass"/>
+          <include name="testAllBooksWithMinimumAvailableBooksFromTX"/>
+        </methods>
+      </class> <!-- tests.acceptanceTestCases.TestHomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

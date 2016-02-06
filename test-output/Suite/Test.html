@@ -1,0 +1,372 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 04 23:51:48 PST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>47 seconds (47528 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1454649944088,&quot;updateDate&quot;:1454649944088,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24166,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;44.0&quot;,&quot;maxVersion&quot;:&quot;44.0&quot;}],&quot;targetPlatforms&quot;:[]}
+1454658710972	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454658710974	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;fiddlerhook@fiddler2.com&quot;,&quot;syncGUID&quot;:&quot;BWaeiwLnTK4J&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2.5.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:&quot;chrome://fiddlerhook/content/about.xul&quot;,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://fiddlerhook/content/fiddlerhook.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FiddlerHook&quot;,&quot;description&quot;:&quot;Integrate Fiddler into Firefox&quot;,&quot;creator&quot;:&quot;Telerik&quot;,&quot;homepageURL&quot;:&quot;https://fiddler2.com/r/?FIDDLERHOOKHELP&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Fiddler2\\FiddlerHook&quot;,&quot;installDate&quot;:1440131992017,&quot;updateDate&quot;:1440131992017,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:33903,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;42.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1454658710974	DeferredSave.extensions.json	DEBUG	Save changes
+1454658710974	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1454658710974	addons.xpi-utils	DEBUG	Updating add-on states
+1454658710976	addons.xpi-utils	DEBUG	Writing add-ons list
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454658710990	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454658710990	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Starting provider: GMPProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454658711000	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454658711000	addons.manager	DEBUG	Starting provider: PluginProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454658711001	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454658711001	addons.manager	DEBUG	Completed startup sequence
+1454658711400	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1454658711593	DeferredSave.extensions.json	DEBUG	Starting write
+1454658711901	addons.repository	DEBUG	No addons.json found.
+1454658711901	DeferredSave.addons.json	DEBUG	Save changes
+1454658711905	DeferredSave.addons.json	DEBUG	Starting timer
+1454658711923	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454658711923	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454658711924	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1454658711929	DeferredSave.extensions.json	DEBUG	Write succeeded
+1454658711931	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1454658711964	DeferredSave.addons.json	DEBUG	Starting write
+1454658712007	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;wqa-test-PC&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:134)
+	at utlilities.TestBase.getWebDriver(TestBase.java:95)
+	at utlilities.TestBase.initBeforeMethod(TestBase.java:50)
+	at tests.acceptanceTestCases.TestHomePage.setUp(TestHomePage.java:28)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1454649944088,&quot;updateDate&quot;:1454649944088,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24166,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;44.0&quot;,&quot;maxVersion&quot;:&quot;44.0&quot;}],&quot;targetPlatforms&quot;:[]}
+1454658710972	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454658710974	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;fiddlerhook@fiddler2.com&quot;,&quot;syncGUID&quot;:&quot;BWaeiwLnTK4J&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2.5.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:&quot;chrome://fiddlerhook/content/about.xul&quot;,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://fiddlerhook/content/fiddlerhook.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FiddlerHook&quot;,&quot;description&quot;:&quot;Integrate Fiddler into Firefox&quot;,&quot;creator&quot;:&quot;Telerik&quot;,&quot;homepageURL&quot;:&quot;https://fiddler2.com/r/?FIDDLERHOOKHELP&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Fiddler2\\FiddlerHook&quot;,&quot;installDate&quot;:1440131992017,&quot;updateDate&quot;:1440131992017,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:33903,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;42.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1454658710974	DeferredSave.extensions.json	DEBUG	Save changes
+1454658710974	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1454658710974	addons.xpi-utils	DEBUG	Updating add-on states
+1454658710976	addons.xpi-utils	DEBUG	Writing add-ons list
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454658710990	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454658710990	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Starting provider: GMPProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454658711000	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454658711000	addons.manager	DEBUG	Starting provider: PluginProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454658711001	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454658711001	addons.manager	DEBUG	Completed startup sequence
+1454658711400	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1454658711593	DeferredSave.extensions.json	DEBUG	Starting write
+1454658711901	addons.repository	DEBUG	No addons.json found.
+1454658711901	DeferredSave.addons.json	DEBUG	Save changes
+1454658711905	DeferredSave.addons.json	DEBUG	Starting timer
+1454658711923	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454658711923	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454658711924	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1454658711929	DeferredSave.extensions.json	DEBUG	Write succeeded
+1454658711931	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1454658711964	DeferredSave.addons.json	DEBUG	Starting write
+1454658712007	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 23 more
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1326714500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1326714500'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1454649944088,&quot;updateDate&quot;:1454649944088,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24166,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;44.0&quot;,&quot;maxVersion&quot;:&quot;44.0&quot;}],&quot;targetPlatforms&quot;:[]}
+1454658710972	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454658710974	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;fiddlerhook@fiddler2.com&quot;,&quot;syncGUID&quot;:&quot;BWaeiwLnTK4J&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2.5.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:&quot;chrome://fiddlerhook/content/about.xul&quot;,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://fiddlerhook/content/fiddlerhook.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FiddlerHook&quot;,&quot;description&quot;:&quot;Integrate Fiddler into Firefox&quot;,&quot;creator&quot;:&quot;Telerik&quot;,&quot;homepageURL&quot;:&quot;https://fiddler2.com/r/?FIDDLERHOOKHELP&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Fiddler2\\FiddlerHook&quot;,&quot;installDate&quot;:1440131992017,&quot;updateDate&quot;:1440131992017,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:33903,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;42.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1454658710974	DeferredSave.extensions.json	DEBUG	Save changes
+1454658710974	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1454658710974	addons.xpi-utils	DEBUG	Updating add-on states
+1454658710976	addons.xpi-utils	DEBUG	Writing add-ons list
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454658710990	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454658710990	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Starting provider: GMPProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454658711000	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454658711000	addons.manager	DEBUG	Starting provider: PluginProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454658711001	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454658711001	addons.manager	DEBUG	Completed startup sequence
+1454658711400	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1454658711593	DeferredSave.extensions.json	DEBUG	Starting write
+1454658711901	addons.repository	DEBUG	No addons.json found.
+1454658711901	DeferredSave.addons.json	DEBUG	Save changes
+1454658711905	DeferredSave.addons.json	DEBUG	Starting timer
+1454658711923	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454658711923	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454658711924	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1454658711929	DeferredSave.extensions.json	DEBUG	Write succeeded
+1454658711931	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1454658711964	DeferredSave.addons.json	DEBUG	Starting write
+1454658712007	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;wqa-test-PC&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:134)
+	at utlilities.TestBase.getWebDriver(TestBase.java:95)
+	at utlilities.TestBase.initBeforeMethod(TestBase.java:50)
+	at tests.acceptanceTestCases.TestHomePage.setUp(TestHomePage.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1454649944088,&quot;updateDate&quot;:1454649944088,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24166,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;44.0&quot;,&quot;maxVersion&quot;:&quot;44.0&quot;}],&quot;targetPlatforms&quot;:[]}
+1454658710972	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454658710974	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;fiddlerhook@fiddler2.com&quot;,&quot;syncGUID&quot;:&quot;BWaeiwLnTK4J&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2.5.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:&quot;chrome://fiddlerhook/content/about.xul&quot;,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://fiddlerhook/content/fiddlerhook.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FiddlerHook&quot;,&quot;description&quot;:&quot;Integrate Fiddler into Firefox&quot;,&quot;creator&quot;:&quot;Telerik&quot;,&quot;homepageURL&quot;:&quot;https://fiddler2.com/r/?FIDDLERHOOKHELP&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Fiddler2\\FiddlerHook&quot;,&quot;installDate&quot;:1440131992017,&quot;updateDate&quot;:1440131992017,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:33903,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;42.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1454658710974	DeferredSave.extensions.json	DEBUG	Save changes
+1454658710974	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1454658710974	addons.xpi-utils	DEBUG	Updating add-on states
+1454658710976	addons.xpi-utils	DEBUG	Writing add-ons list
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454658710990	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454658710990	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454658710990	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454658710991	addons.manager	DEBUG	Starting provider: GMPProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454658711000	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454658711000	addons.manager	DEBUG	Starting provider: PluginProvider
+1454658711000	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454658711001	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454658711001	addons.manager	DEBUG	Completed startup sequence
+1454658711400	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1454658711400	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1454658711593	DeferredSave.extensions.json	DEBUG	Starting write
+1454658711901	addons.repository	DEBUG	No addons.json found.
+1454658711901	DeferredSave.addons.json	DEBUG	Save changes
+1454658711905	DeferredSave.addons.json	DEBUG	Starting timer
+1454658711923	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454658711923	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454658711924	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1454658711929	DeferredSave.extensions.json	DEBUG	Write succeeded
+1454658711931	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1454658711964	DeferredSave.addons.json	DEBUG	Starting write
+1454658712007	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.setUp()'><b>setUp</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.tearDown()'><b>tearDown</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testAllBooksWithDefaultTax()'><b>testAllBooksWithDefaultTax</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testAllBooksWithMaximumAvailableBooksFromWY()'><b>testAllBooksWithMaximumAvailableBooksFromWY</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testAllBooksWithMinimumAvailableBooksFromTX()'><b>testAllBooksWithMinimumAvailableBooksFromTX</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testElephantFromMN()'><b>testElephantFromMN</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testLionFromNY()'><b>testLionFromNY</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+<tr>
+<td title='tests.acceptanceTestCases.TestHomePage.testZebraFromCA()'><b>testZebraFromCA</b><br>Test class: tests.acceptanceTestCases.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.acceptanceTestCases.TestHomePage@246ae04d</td></tr>
+</table><p>
+</body>
+</html>
