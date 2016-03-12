@@ -22,6 +22,7 @@ public class TestHomePage extends TestBase{
 	public void beforeClass(){
 		initBeforeClass();
 	}
+
 	
 	@BeforeMethod
 	public void setUp(){
