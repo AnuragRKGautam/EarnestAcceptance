@@ -26,7 +26,7 @@ public class TestHomePage extends TestBase{
 	public void setUp(){
 
 		initBeforeMethod();
-	}//This is New Change
+	}//This is New Chang
 	
 	@AfterMethod
 	public void tearDown(ITestResult result){
