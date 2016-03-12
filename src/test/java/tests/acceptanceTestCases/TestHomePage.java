@@ -22,13 +22,11 @@ public class TestHomePage extends TestBase{
 	public void beforeClass(){
 		initBeforeClass();
 	}
-
-	
 	@BeforeMethod
 	public void setUp(){
+
 		initBeforeMethod();
-	}
-	
+	}//This is New Chang
 	
 	@AfterMethod
 	public void tearDown(ITestResult result){
